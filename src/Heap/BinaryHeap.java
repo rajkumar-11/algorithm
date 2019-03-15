@@ -1,5 +1,7 @@
 package Heap;
 
+import java.util.Arrays;
+
 public class BinaryHeap {
 	int[] arr;
 	int capacity;
@@ -15,16 +17,23 @@ public class BinaryHeap {
 	public static void main(String[] args) {
 		BinaryHeap heap = new BinaryHeap(11);
 		heap.insert(3);
+		System.out.println(Arrays.toString(heap.arr));
 		heap.insert(2);
+		System.out.println(Arrays.toString(heap.arr));
 		heap.delete(1);
+		System.out.println(Arrays.toString(heap.arr));
 		heap.insert(15);
+		System.out.println(Arrays.toString(heap.arr));
 		heap.insert(5);
+		System.out.println(Arrays.toString(heap.arr));
 		heap.insert(4);
+		System.out.println(Arrays.toString(heap.arr));
 		heap.insert(45);
+		System.out.println(Arrays.toString(heap.arr));
 		System.out.println("minimum= " + heap.extractMinimum());
-//		System.out.println("minimum= " + heap.getMinimum());
+		// System.out.println("minimum= " + heap.getMinimum());
 		heap.decreaseKey(2, 1);
-//		System.out.println("minimum= " + heap.getMinimum());
+		// System.out.println("minimum= " + heap.getMinimum());
 		System.out.println("minimum= " + heap.extractMinimum());
 		System.out.println("minimum= " + heap.extractMinimum());
 		System.out.println("minimum= " + heap.extractMinimum());
