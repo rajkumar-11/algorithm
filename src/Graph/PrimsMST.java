@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 
+
 public class PrimsMST {
 	public static void main(String[] args) {
 		WeightedGraph graph = new WeightedGraph(9);

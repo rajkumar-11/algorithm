@@ -1,6 +1,6 @@
 package Graph;
 
-public class Node
+ class Node
 {
   int v,w;
   

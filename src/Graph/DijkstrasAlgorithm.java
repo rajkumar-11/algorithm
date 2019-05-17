@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 
+
 public class DijkstrasAlgorithm {
 	public static void main(String[] args) {
 		WeightedGraph graph = new WeightedGraph(9);
@@ -51,8 +52,7 @@ public class DijkstrasAlgorithm {
 
 			Iterator<Node> itr = graph.list[nodep.u].iterator();
 
-			while (itr.hasNext()) 
-			{
+			while (itr.hasNext()) {
 				Node node = itr.next();
 
 				if (visited[node.v] == false && (nodes[node.v].value > nodes[nodep.u].value + node.w)) {
