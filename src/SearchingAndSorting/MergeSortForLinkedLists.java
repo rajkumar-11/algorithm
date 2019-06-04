@@ -2,7 +2,7 @@ package SearchingAndSorting;
 
 public class MergeSortForLinkedLists {
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
+		LinkedList1 list = new LinkedList1();
 		list.push(15);
 		list.push(10);
 		list.push(5);

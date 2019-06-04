@@ -4,7 +4,7 @@ public class InsertionSortForSinglyLinkedList {
 	static Node front;
 
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
+		LinkedList1 list = new LinkedList1();
 		list.push(5);
 		list.push(20);
 		list.push(4);

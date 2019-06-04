@@ -1,9 +1,9 @@
 package SearchingAndSorting;
 
-public class LinkedList {
+public class LinkedList1 {
 	Node head;
 
-	public LinkedList() {
+	public LinkedList1() {
 		this.head = null;
 
 	}
