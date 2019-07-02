@@ -1,0 +1,9 @@
+ class XX {
+
+}
+ 
+ class YY
+ {
+	 
+	 
+ }
