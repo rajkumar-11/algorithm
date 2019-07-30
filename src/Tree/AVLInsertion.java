@@ -4,15 +4,15 @@ public class AVLInsertion {
 	public static void main(String[] args) {
 		AVLTree tree = new AVLTree();
 
-		tree.root = insert(tree.root, 9);
-		tree.root = insert(tree.root, 5);
 		tree.root = insert(tree.root, 10);
-		tree.root = insert(tree.root, 0);
-		tree.root = insert(tree.root, 6);
-		tree.root = insert(tree.root, 11);
-		tree.root = insert(tree.root, -1);
-		tree.root = insert(tree.root, 1);
-		tree.root = insert(tree.root, 2);
+		tree.root = insert(tree.root, 20);
+		tree.root = insert(tree.root, 30);
+		tree.root = insert(tree.root, 40);
+		tree.root = insert(tree.root, 50);
+		tree.root = insert(tree.root, 25);
+//		tree.root = insert(tree.root, -1);
+//		tree.root = insert(tree.root, 1);
+//		tree.root = insert(tree.root, 2);
 
 		System.out.println("PreOrder Traversal of the constructed tree is:");
 
@@ -52,6 +52,7 @@ public class AVLInsertion {
 		root.height = height(root);
 
 		int difference = getDifference(root);
+		System.out.println("diff "+difference);
 
 		if (difference > 1 && getDifference(root.left) >= 0) {
 			return rotateRight(root);
