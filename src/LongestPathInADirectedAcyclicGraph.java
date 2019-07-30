@@ -23,8 +23,7 @@ public class LongestPathInADirectedAcyclicGraph {
 
 	}
 
-	private static void longestPath(DirectedWeightedGraph graph, int s)
-	{
+	private static void longestPath(DirectedWeightedGraph graph, int s) {
 		boolean[] visited = new boolean[graph.V];
 
 		Stack<Integer> stack = new Stack<Integer>();
@@ -32,7 +31,7 @@ public class LongestPathInADirectedAcyclicGraph {
 		for (int i = 0; i < graph.V; i++) {
 
 			if (visited[i] == false) {
-			topoUtil(graph, visited, stack, i);
+				topoUtil(graph, visited, stack, i);
 
 			}
 		}
@@ -44,16 +43,14 @@ public class LongestPathInADirectedAcyclicGraph {
 		}
 
 		dist[s] = 0;
-		
-		
-		while(!stack.isEmpty())
-		{
-			System.out.print(stack.pop()+" ");
+
+		while (!stack.isEmpty()) {
+			System.out.print(stack.pop() + " ");
 		}
 
 		while (!stack.isEmpty()) {
 			int u = stack.pop();
-			System.out.println("u= "+u);
+			System.out.println("u= " + u);
 
 			if (dist[u] != Integer.MIN_VALUE) {
 				Iterator<Node> itr = graph.adjList[u].iterator();
@@ -62,9 +59,9 @@ public class LongestPathInADirectedAcyclicGraph {
 					int v = node.v;
 					int w = node.w;
 
-					if (dist[u] + w> dist[v]) {
+					if (dist[u] + w > dist[v]) {
 						dist[v] = dist[u] + w;
-						
+
 					}
 
 				}
@@ -86,7 +83,7 @@ public class LongestPathInADirectedAcyclicGraph {
 			int v = itr.next().v;
 
 			if (visited[v] == false) {
-				System.out.println("v= "+v);
+				System.out.println("v= " + v);
 				topoUtil(graph, visited, stack, v);
 
 			}

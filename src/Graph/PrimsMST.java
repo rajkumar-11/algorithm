@@ -32,7 +32,8 @@ public class PrimsMST {
 
 	}
 
-	private static void primsMST(WeightedGraph graph) {
+	private static void primsMST(WeightedGraph graph)
+	{
 		int v = graph.V;
 
 		boolean[] visited = new boolean[graph.V];

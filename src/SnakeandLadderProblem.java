@@ -28,7 +28,8 @@ public class SnakeandLadderProblem {
 
 	}
 
-	private static int getMinDiceThrows(int[] moves, int n) {
+	private static int getMinDiceThrows(int[] moves, int n)
+	{
 		Queue<Qentry> queue = new LinkedList<>();
 
 		Qentry qentry = new Qentry();
