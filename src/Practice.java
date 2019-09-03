@@ -6,9 +6,6 @@ public class Practice {
 	
 		Graph11 graph= new Graph11(5);
 		
-		//grpah.
-		
-		
 		
 	}
 
