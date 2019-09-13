@@ -11,16 +11,15 @@ public class FlippingBit {
 
             long ans = 0;
             int pow = 0;
-            while (pow<32) {
+            while (pow < 32) {
                 long x = q % 2;
                 ans += (Math.pow(2, pow) * (1 ^ x));
-//                System.out.println(ans);
+                // System.out.println(ans);
                 q = q / 2;
                 pow++;
             }
             System.out.println(ans);
         }
-
 
     }
 
