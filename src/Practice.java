@@ -3,11 +3,7 @@ import java.util.Set;
 
 public class Practice {
 	public static void main(String[] args) {
-	
-		Graph11 graph= new Graph11(5);
-		
-		//grpah.
-		
+		System.out.println(1<<30);
 		
 		
 	}
