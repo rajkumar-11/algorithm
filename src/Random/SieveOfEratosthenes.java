@@ -1,38 +1,31 @@
-package Random;
 
 public class SieveOfEratosthenes {
-	public static void main(String[] args)
-	{
-		int n = 30;
-		System.out.print("Following are the prime numbers ");
-		System.out.println("smaller than or equal to " + n);
+	public static void main(String[] args) {
+		int n = 10000;
 		sieveOfEratosthenes(n);
 
 	}
 
-	private static void sieveOfEratosthenes(int n)
-	{
-		int[] temp = new int[n + 1];
-		
-		for (int i = 2; i*i <= n; i++) 
-		{
-			if (temp[i] == 0) 
-			{
-				for (int j = 2; j <= n/i;j++ ) {
-					temp[j*i] = 1;
+	private static void sieveOfEratosthenes(int n) {
+		boolean[] prime = new boolean[n + 1];
 
-//					J=J*2;
+		for (int p = 2; p * p <= n; p++) {
+			if (prime[p] == false) {
+				// System.out.println("p= "+p);
+				int x = 2;
+				for (int i = 2; i * p <= n;) {
+
+					prime[i * p] = true;
+					i++;
 				}
 
 			}
 
 		}
 
-		for (int i = 2; i <= n; i++) 
-		{
-			if (temp[i] == 0)
-				System.out.print(i + " ");
-
+		for (int i = 1000; i <= n; i++) {
+			if (prime[i] == false)
+				System.out.println(i);
 		}
 
 	}
