@@ -1,4 +1,4 @@
-import sun.awt.X11.XSystemTrayPeer;
+package Random;//import sun.awt.X11.XSystemTrayPeer;
 
 import java.util.Scanner;
 
