@@ -1,3 +1,5 @@
+package Company;
+
 public class NASDAQ {
 
     public int method(){

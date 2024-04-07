@@ -1,3 +1,5 @@
+package Company;
+
 import java.util.Arrays;
 
 //Given an integer array, move all elements that are 0 to the left while maintaining the order of other elements

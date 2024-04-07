@@ -1,6 +1,8 @@
+package Company;
+
 import java.util.Arrays;
 
-public class Ocle {
+public class Oracle {
     public static void main(String[] args) {
         int n = 10;
         // int i=1;
